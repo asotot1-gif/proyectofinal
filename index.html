@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <!--ajusta el contenido en pantalla en celular-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Wedding Planning Group</title>
+
+  <link href="media/favicon-bell-02.png" rel="icon">
+  <link href="css/estilos.css" rel="stylesheet">
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Meow+Script&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Euphoria+Script&family=Meow+Script&family=Nothing+You+Could+Do&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+
+  <!--Carga del framework css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+  <!--Header-->
+  <header class="header">
+    <h1 class="logo">Wedding Planning Group</h1>
+
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#audio">Video y Audio</a>
+      <a href="#suscripcion">Suscríbete</a>
+    </nav>
+  </header>
+
+  <!--Banner-->
+  <section id="inicio" class="banner">
+    <h1>Un cuento de hadas!</h1>
+    <p>Ofrecemos todo tipo de servicios para el dia mas especial.</p>
+  </section>
+
+
+
+
+  <!--Info-->
+  <section class="contenido">
+
+    <img src="media/icono3-03.png" class="icono animate__animated animate__bounce">
+
+    <h2>Sobre Nosotros</h2>
+
+    <p>
+      Somos una empresa dedicada a ofrecer servicios para bodas.
+      Nos encargamos de hacer ese dia especial, inolvidable.
+    </p>
+
+  </section>
+
+  <!--Botones interactivos-->
+
+  <section class="contenido" id="servicios">
+
+    <h2>Servicios</h2>
+
+    <div class="servicios">
+
+      <div class="servicio">
+        <img src="media/fotografia-04.png" class="icono-servicio">
+        <button class="btn btn-outline-success" onclick="mostrarImagen('media/fotografia.jpg')">Fotografía</button>
+      </div>
+
+      <div class="servicio">
+        <img src="media/flores-05.png" class="icono-servicio">
+        <button class="btn btn-outline-success" onclick="mostrarImagen('media/Floresydeco.jpg')">Flores y
+          decoración</button>
+      </div>
+
+      <div class="servicio">
+        <img src="media/alimentacion-06.png" class="icono-servicio">
+        <button class="btn btn-outline-success" onclick="mostrarImagen('media/alimentacion.jpg')">Alimentación</button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!--Galeria de fotos-->
+
+  <section class="contenido" id="galeria">
+    <h2>Galería</h2>
+
+    <div id="carouselGaleria" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="media/galeria1.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="media/galeria2.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="media/galeria3.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="media/galeria4.jpg" class="d-block w-100">
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </section>
+
+  <!--Video de YouTube Incrustado-->
+
+  <section class="contenido-yt" id="audio">
+
+    <div class="video">
+      <h2>Video</h2>
+
+      <iframe width="100%" height="400" src="https://www.youtube.com/embed/jX4jySkP6FQ?si=Jhqfmmtvtc7ibNYR"
+        title="Video" frameborder="0" allowfullscreen>
+      </iframe>
+    </div>
+
+
+    <!--Audio-->
+
+    <div class="contenido-audio">
+
+      <h2>Escucha nuestro audio</h2>
+
+      <audio controls>
+        <source src="media/audio.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+  </section>
+
+
+
+  <!-- Mapa Google-->
+
+  <section>
+
+    <iframe src="https://www.google.com/maps?q=San+Jose+Costa+Rica&output=embed" width="100%" height="400"
+      style="border:0;">
+    </iframe>
+
+  </section>
+
+  <!--Form-->
+  <section class="suscripcion" id="suscripcion">
+
+    <div class="box-suscripcion">
+
+      <h2>Suscríbete</h2>
+
+      <form class="form-suscripcion">
+
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo electrónico" required>
+
+        <button type="submit" class="btn btn-light">Suscribirme</button>
+
+      </form>
+
+    </div>
+
+  </section>
+  <!--Boton Scrolltop-->
+  <button onclick="scrollTopFunction()" id="btnTop">
+    <img src="media/scrollTop-02.png" alt="Subir">
+  </button>
+
+  <!--Chat the WA-->
+
+  <a href="https://wa.me/50688888888" class="whatsapp" target="_blank">
+    <img src="media/whatsapp-07.png">
+  </a>
+
+
+  <!--JS-->
+  <script src="js/script.js"></script>
+
+
+  <footer class="footer">
+
+    <div class="footer-container">
+
+      <!-- Información de contacto -->
+      <div class="footer-contacto">
+        <h3>Contacto</h3>
+        <p>Correo: info@weddingplanning.com</p>
+        <p>Tel: +506 8888 8888</p>
+        <p>San José, Costa Rica</p>
+      </div>
+
+      <!-- Aviso -->
+      <div class="footer-aviso">
+        <p>&copy; 2026 Wedding Planning Group. Todos los derechos reservados.</p>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <div class="modal fade" id="modalImagen" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <img src="" id="imagenModal" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function mostrarImagen(ruta) {
+      document.getElementById("imagenModal").src = ruta;
+
+      let modal = new bootstrap.Modal(document.getElementById('modalImagen'));
+      modal.show();
+    }
+  </script>
+
+</body>
+
+</html>
