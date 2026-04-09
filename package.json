@@ -1,5 +1,5 @@
 {
-  "name": "web-azure",
+  "name": "proyectofinal",
   "version": "1.0.0",
   "scripts": {
     "start": "npx serve -s ."
